@@ -1,8 +1,12 @@
 import React from 'react'
+import Link from 'next/link'
 
 const PropertiesPage = () => {
   return (
-    <div>PropertiesPage</div>
+    <div className="text-4xl">
+    <h1>PropertiesPage</h1>
+    <Link href='/'>HomePage</Link>
+    </div>
   )
 }
 

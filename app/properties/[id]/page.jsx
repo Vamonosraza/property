@@ -1,3 +1,4 @@
+'use clien'
 import React from 'react'
 
 const PropertyIdPage = () => {
