@@ -61,7 +61,7 @@ const Navbar = () => {
                             />
 
                             <span className="hidden md:block text-white text-2xl font-bold ml-2"
-                            >PropertyPulse</span
+                            >SnapProperties</span
                             >
                         </a>
 
