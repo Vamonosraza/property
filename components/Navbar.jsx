@@ -1,4 +1,7 @@
 import React from 'react'
+import logo from '@/assets/images/logo.svg'
+import profileDefault from '@/assets/images/profile.svg'
+import Image from 'next/image'
 
 const Navbar = () => {
     return (
@@ -33,9 +36,9 @@ const Navbar = () => {
 
                     <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
                         <a className='flex flex-shrink-0 items-center' href='/index.html'>
-                            <img
+                            <Image
                                 className='h-10 w-auto'
-                                src=''
+                                src={logo}
                                 alt='Properties'/>
                             <span className='hidden md:block text-white text-2xl font-bold ml-2'>
                                 PropertyCat
@@ -105,9 +108,9 @@ const Navbar = () => {
 
                                     <span className="absolute -inset-1.5"></span>
                                     <span className="sr-only">Open user menu</span>
-                                    <img
+                                    <Image
                                         className="h-8 w-8 rounded-full"
-                                        src="images/profile.png"
+                                        src={profileDefault}
                                         alt=""
                                     />
                                 </button>
