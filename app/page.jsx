@@ -3,8 +3,11 @@ import Link from 'next/link'
 import HeroPage from '@/components/Hero'
 import InfoBoxes from '@/components/InfoBoxes'
 import HomeProperties from '@/components/HomeProperties'
+import connectDB from '@/config/db'
 
-const HomePage = () => {
+const HomePage = async () => {
+  await connectDB()
+  
   return (<>
   <HeroPage/>
   <InfoBoxes/>
