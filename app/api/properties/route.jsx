@@ -7,7 +7,7 @@ export const GET = async (request) => {
         await connectDB()
         console.log('Connected to DB with GET')
 
-        const properties = await Property.find({});
+        const properties = await Property.find({}).sort({createdAt: -1});
 
         console.log(properties)
 
