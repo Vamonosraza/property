@@ -11,6 +11,12 @@ export const GET = async (request) => {
 
         console.log(properties)
 
+        if (properties.length === 0) {
+            console.log('No properties found');
+        } else {
+            console.log('Properties found:', properties);
+        }
+
 
         return new Response(JSON.stringify(properties), {status: 200})
     } catch (err){
